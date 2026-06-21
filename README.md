@@ -1,4 +1,4 @@
-# TTSP — Text to Speech Poop
+# TTSP - Text to Speech Poop
 
 A Python-based TTS engine that splices recorded word and phoneme clips together (YP / "poop" style). Drop in your own voice samples and get synthesized speech from any text.
 
@@ -7,7 +7,7 @@ A Python-based TTS engine that splices recorded word and phoneme clips together 
 1. **Record** yourself speaking naturally
 2. **Extract** word clips using Whisper transcription
 3. **Clip** phonemes manually for fallback coverage
-4. **Generate** speech — words are matched exactly, missing words fall back to phoneme splicing via `g2p_en`
+4. **Generate** speech - words are matched exactly, missing words fall back to phoneme splicing via `g2p_en`
 
 ```
 "hello"  → exact word match → hello.wav
@@ -37,7 +37,7 @@ python ingest.py recording.wav --voice kat
 python -m ttsp.extractor recording.wav -o samples -v kat
 ```
 
-Speak naturally — Whisper transcribes whatever you say and extracts word clips. No script needed.
+Speak naturally - Whisper transcribes whatever you say and extracts word clips. No script needed.
 
 ### Clip Phonemes (Manual)
 

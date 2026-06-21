@@ -10,7 +10,7 @@ def main():
         print("Usage: python ingest.py <recording.wav> [--voice kat]")
         print()
         print("Extracts words from a recording and adds them to the voice library.")
-        print("Phoneme clips are skipped — only word clips are extracted.")
+        print("Phoneme clips are skipped - only word clips are extracted.")
         return
 
     audio = sys.argv[1]
