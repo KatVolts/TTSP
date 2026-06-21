@@ -3,7 +3,6 @@ import random
 import logging
 from typing import List, Optional
 
-import numpy as np
 from g2p_en import G2p
 
 from .library import SampleLibrary
