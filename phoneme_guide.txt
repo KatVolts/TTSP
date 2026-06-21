@@ -1,0 +1,68 @@
+# Phoneme Clipping Guide
+
+Drop WAV files into `samples/kat/`. Name format: `PHONEME.wav` or `PHONEME1.wav`, `PHONEME2.wav` for variants.
+
+## Vowels (14)
+
+| Phoneme | Sound | Example Word | Clip From |
+|---------|-------|-------------|-----------|
+| AA | as in "f**a**ther" | father, spa, calm | `father.wav` |
+| AE | as in "b**e**d" | bed, head, said | `bed.wav` |
+| AH | as in "c**u**lm" | about, comma, above | `about.wav` |
+| AO | as in "th**ough**t" | thought, law, bought | `thought.wav` |
+| AW | as in "p**ow**er" | power, cow, now | `cow.wav` |
+| AY | as in "p**r**ice" | price, my, fly | `my.wav` |
+| EH | as in "m**e**t" | met, head, said | `met.wav` |
+| ER | as in "m**ir**ror" | mirror, bird, her | `her.wav` |
+| EY | as in "m**a**de" | made, day, play | `day.wav` |
+| IH | as in "k**i**t" | kit, bit, sit | `it.wav` |
+| IY | as in "f**ee**t" | feet, see, me | `see.wav` |
+| OW | as in "g**o**" | go, so, no | `go.wav` |
+| OY | as in "b**oy**" | boy, toy, joy | `boy.wav` |
+| UH | as in "p**u**t" | put, good, could | `put.wav` |
+| UW | as in "f**oo**d" | food, blue, true | `blue.wav` |
+
+## Consonants (25)
+
+| Phoneme | Sound | Example Word | Clip From |
+|---------|-------|-------------|-----------|
+| B | as in "b**a**t" | bat, big, but | `but.wav` |
+| CH | as in "c**h**air" | chair, much, church | `much.wav` |
+| D | as in "d**og**" | dog, did, and | `dog.wav` |
+| DH | as in "**th**is" | this, that, the | `this.wav` |
+| F | as in "f**an**" | fan, of, off | `fan.wav` |
+| G | as in "g**o**" | go, get, big | `go.wav` |
+| HH | as in "**h**at" | hat, how, he | `how.wav` |
+| JH | as in "**j**ar" | jar, much, age | `much.wav` |
+| K | as in "k**i**t" | kit, back, cake | `kit.wav` |
+| L | as in "l**e**t" | let, world, call | `let.wav` |
+| M | as in "m**a**t" | mat, him, my | `mat.wav` |
+| N | as in "n**o**" | no, in, and | `no.wav` |
+| NG | as in "si**ng**" | sing, thing, ring | `sing.wav` |
+| P | as in "p**e**n" | pen, people, pen | `pen.wav` |
+| R | as in "r**e**d" | red, world, are | `red.wav` |
+| S | as in "s**i**t" | sit, see, is | `sit.wav` |
+| SH | as in "sh**e**" | she, fish, measure | `she.wav` |
+| T | as in "t**i**t" | tit, but, time | `but.wav` |
+| TH | as in "**th**ink" | think, path, thick | `think.wav` |
+| V | as in "v**e**n" | ven, very, of | `very.wav` |
+| W | as in "w**e**" | we, water, world | `we.wav` |
+| Y | as in "y**es**" | yes, you, young | `yes.wav` |
+| Z | as in "z**oo**" | zoo, size, was | `was.wav` |
+| ZH | as in "me**a**sure" | measure, vision, teasing | `vision.wav` |
+
+## Tips
+
+- **Clip tightly** on the consonant/vowel sound, trim leading/trailing silence.
+- **Multiple variants** are good: `AH0.wav`, `AH1.wav`, `AH2.wav` for different stress levels.
+- **Format**: 44100 Hz mono WAV, PCM_16.
+- **Test**: `python generate.py` then type a sentence to hear results.
+- **Check**: `python -m ttsp.engine "hello world" -v kat` to test specific words.
+
+## Stress Markers
+
+- `0` = unstressed (AH0, EH0, IH0)
+- `1` = primary stress (AH1, EH1, IH1)
+- `2` = secondary stress (AH2, EH2, IH2)
+
+The system strips stress markers automatically, so `AH.wav` works for all three.

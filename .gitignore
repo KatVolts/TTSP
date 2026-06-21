@@ -1,0 +1,16 @@
+# Recordings
+*.wav
+!samples/.gitkeep
+
+# Output
+output*.wav
+test_*.wav
+
+# Python
+__pycache__/
+*.egg-info/
+*.pyc
+*.pyo
+
+# Temp
+*.tmp
