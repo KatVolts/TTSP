@@ -20,7 +20,7 @@ A Python-based TTS engine that splices recorded word and phoneme clips together 
 pip install -r requirements.txt
 ```
 
-Requires Python 3.9+. Whisper needs a CUDA-capable GPU for reasonable speed (CPU works but is slow).
+Requires Python 3.9+.
 
 ## Usage
 
