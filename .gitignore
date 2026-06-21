@@ -1,8 +1,5 @@
-# Recordings
-*.wav
-!samples/.gitkeep
-
-# Output
+# Recordings and outputs
+recordings/
 output*.wav
 test_*.wav
 
